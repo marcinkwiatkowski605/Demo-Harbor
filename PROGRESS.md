@@ -19,7 +19,7 @@
 
 ## Current status
 
-**Step 4 ukończony.** FormCard zmontowany i zweryfikowany. App.tsx pokazuje tylko FormCard + BrandToggle.
+**Step 5 ukończony.** Demo zdeployowane: https://marcinkwiatkowski605.github.io/Demo-Harbor/ (repo: https://github.com/marcinkwiatkowski605/Demo-Harbor, branch `gh-pages`). Vite `base: '/Demo-Harbor/'` (case-sensitive). Deploy: `npm run deploy`.
 
 ## Token mapping decisions
 
