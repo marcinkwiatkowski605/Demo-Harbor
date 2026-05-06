@@ -2,7 +2,7 @@
 
 Coded demo of a Figma screen showing multi-brand token switching. Two brands (Carentan, Railyard) share component code; only the loaded CSS token file changes.
 
-**Live demo:** https://marcinkwiatkowski605.github.io/demo-harbor/
+**Live demo:** https://marcinkwiatkowski605.github.io/Demo-Harbor/
 
 Tokens are vendored from [marcinkwiatkowski605/Harbor-Token-System](https://github.com/marcinkwiatkowski605/Harbor-Token-System).
 
