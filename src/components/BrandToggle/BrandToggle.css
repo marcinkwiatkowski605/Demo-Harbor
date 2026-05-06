@@ -1,0 +1,42 @@
+.brand-toggle {
+  position: fixed;
+  bottom: var(--space-16);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  padding: var(--space-8) var(--space-12);
+  background: var(--color-bg-neutral);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-circle);
+  z-index: 1000;
+}
+
+.brand-toggle__label {
+  color: var(--color-text-secondary);
+}
+
+.brand-toggle__switch {
+  position: relative;
+  display: inline-flex;
+  background: var(--color-bg-neutral-subtle);
+  border: 1px solid var(--color-border-default-subtle);
+  border-radius: var(--radius-circle);
+  padding: var(--space-4);
+  gap: var(--space-4);
+}
+
+.brand-toggle__option {
+  border: 0;
+  background: transparent;
+  color: var(--color-text-secondary);
+  padding: var(--space-4) var(--space-12);
+  border-radius: var(--radius-circle);
+  white-space: nowrap;
+}
+
+.brand-toggle__option[aria-checked='true'] {
+  background: var(--color-bg-brand-default);
+  color: var(--color-text-on-brand);
+}

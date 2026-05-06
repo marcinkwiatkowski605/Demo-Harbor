@@ -1,0 +1,53 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--button-gap);
+  border: 0;
+  background: var(--button-bg-default);
+  color: var(--button-text);
+  border-radius: var(--button-radius-lg);
+  height: var(--button-height-lg);
+  padding-inline: var(--button-padding-lg);
+  white-space: nowrap;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--button-bg-hover);
+}
+
+.button:active:not(:disabled) {
+  background: var(--button-bg-active);
+}
+
+.button[aria-pressed='true'] {
+  background: var(--button-bg-selected);
+}
+
+.button:disabled {
+  opacity: var(--button-opacity-disabled);
+  cursor: not-allowed;
+}
+
+.button--size-md {
+  height: var(--button-height-md);
+  padding-inline: var(--button-padding-md);
+  border-radius: var(--button-radius-md);
+}
+
+.button--size-sm {
+  height: var(--button-height-sm);
+  padding-inline: var(--button-padding-sm);
+  border-radius: var(--button-radius-sm);
+}
+
+.button--full-width {
+  width: 100%;
+}
+
+.button__icon {
+  width: var(--button-icon-size);
+  height: var(--button-icon-size);
+  color: var(--button-icon);
+  flex-shrink: 0;
+}

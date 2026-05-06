@@ -1,0 +1,100 @@
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.textarea__label-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--color-text-primary);
+}
+
+.textarea__label-optional {
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.textarea__field {
+  position: relative;
+  background: var(--textarea-bg);
+  border: var(--textarea-border-width) solid var(--textarea-border-default);
+  border-radius: var(--textarea-radius);
+  min-height: var(--textarea-min-height);
+}
+
+.textarea__field:focus-within {
+  border-color: var(--textarea-border-active);
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.textarea--error .textarea__field {
+  border-color: var(--textarea-border-error);
+}
+
+.textarea--disabled .textarea__field {
+  opacity: var(--textarea-opacity-disabled);
+  cursor: not-allowed;
+}
+
+.textarea__control {
+  display: block;
+  width: 100%;
+  min-height: var(--textarea-min-height);
+  padding-inline: var(--textarea-padding-inline);
+  padding-block: var(--textarea-padding-block);
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: var(--textarea-text-filled);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  resize: vertical;
+}
+
+.textarea__control::placeholder {
+  color: var(--textarea-text-placeholder);
+}
+
+.textarea__control:disabled {
+  cursor: not-allowed;
+}
+
+.textarea__hints {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-16);
+}
+
+.textarea__helper {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  color: var(--color-text-secondary);
+  flex: 1;
+  min-width: 0;
+}
+
+.textarea--error .textarea__helper {
+  color: var(--color-text-error);
+}
+
+.textarea__helper-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--input-icon-size);
+  height: var(--input-icon-size);
+  flex-shrink: 0;
+}
+
+.textarea__counter {
+  color: var(--color-text-primary);
+  flex-shrink: 0;
+  text-align: end;
+}

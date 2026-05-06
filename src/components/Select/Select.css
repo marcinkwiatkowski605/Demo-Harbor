@@ -1,0 +1,101 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  gap: var(--select-gap);
+}
+
+.select__label-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--color-text-primary);
+}
+
+.select__label-optional {
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.select__label-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--select-icon-size);
+  height: var(--select-icon-size);
+  color: var(--color-icon-default);
+}
+
+.select__field {
+  display: flex;
+  align-items: center;
+  gap: var(--select-gap);
+  width: 100%;
+  height: var(--select-height);
+  padding-inline-start: var(--select-padding-start);
+  padding-inline-end: var(--select-padding-end);
+  background: var(--select-bg);
+  border: var(--select-border-width) solid var(--select-border-default);
+  border-radius: var(--select-radius);
+  color: var(--select-text-filled);
+  text-align: start;
+  cursor: pointer;
+}
+
+.select__field:hover:not(:disabled) {
+  border-color: var(--select-border-active);
+}
+
+.select__field:focus-visible {
+  border-color: var(--select-border-active);
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.select--error .select__field {
+  border-color: var(--select-border-error);
+}
+
+.select__field:disabled {
+  opacity: var(--select-opacity-disabled);
+  cursor: not-allowed;
+}
+
+.select__value {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.select__value--placeholder {
+  color: var(--select-text-placeholder);
+}
+
+.select__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--select-icon-size);
+  height: var(--select-icon-size);
+  color: var(--select-icon);
+  flex-shrink: 0;
+}
+
+.select__helper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--color-text-secondary);
+}
+
+.select--error .select__helper {
+  color: var(--color-text-error);
+}
+
+.select__helper-icon {
+  display: inline-flex;
+  width: var(--select-icon-size);
+  height: var(--select-icon-size);
+  flex-shrink: 0;
+}

@@ -1,0 +1,54 @@
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  background: var(--icon-button-bg-default);
+  color: var(--icon-button-icon-default);
+  border-radius: var(--icon-button-radius-sm);
+  width: var(--icon-button-size-sm);
+  height: var(--icon-button-size-sm);
+}
+
+.icon-button:hover:not(:disabled) {
+  background: var(--icon-button-bg-hover);
+  color: var(--icon-button-icon-hover);
+}
+
+.icon-button:active:not(:disabled) {
+  background: var(--icon-button-bg-active);
+  color: var(--icon-button-icon-active);
+}
+
+.icon-button[aria-pressed='true'] {
+  background: var(--icon-button-bg-selected);
+  color: var(--icon-button-icon-selected);
+}
+
+.icon-button:disabled {
+  opacity: var(--icon-button-opacity-disabled);
+  cursor: not-allowed;
+}
+
+.icon-button--size-md {
+  border-radius: var(--icon-button-radius-md);
+  width: var(--icon-button-size-md);
+  height: var(--icon-button-size-md);
+}
+
+.icon-button--size-lg {
+  border-radius: var(--icon-button-radius-lg);
+  width: var(--icon-button-size-lg);
+  height: var(--icon-button-size-lg);
+}
+
+.icon-button__icon {
+  width: var(--icon-button-icon-size);
+  height: var(--icon-button-icon-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}

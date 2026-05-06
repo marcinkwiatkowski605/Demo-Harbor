@@ -1,0 +1,103 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--input-gap);
+}
+
+.input__label-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--color-text-primary);
+}
+
+.input__label-optional {
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.input__label-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--input-icon-size);
+  height: var(--input-icon-size);
+  color: var(--color-icon-default);
+}
+
+.input__field {
+  display: flex;
+  align-items: center;
+  gap: var(--input-gap);
+  height: var(--input-height);
+  padding-inline: var(--input-padding-inline);
+  background: var(--input-bg);
+  border: var(--input-border-width) solid var(--input-border-default);
+  border-radius: var(--input-radius);
+  color: var(--input-text-filled);
+}
+
+.input__field:focus-within {
+  border-color: var(--input-border-active);
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.input--error .input__field {
+  border-color: var(--input-border-error);
+}
+
+.input--disabled .input__field {
+  opacity: var(--input-opacity-disabled);
+  cursor: not-allowed;
+}
+
+.input__control {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  padding: 0;
+  height: 100%;
+}
+
+.input__control::placeholder {
+  color: var(--input-text-placeholder);
+}
+
+.input__control:disabled {
+  cursor: not-allowed;
+}
+
+.input__field-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--input-icon-size);
+  height: var(--input-icon-size);
+  color: var(--input-icon);
+  flex-shrink: 0;
+}
+
+.input__helper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--color-text-secondary);
+}
+
+.input--error .input__helper {
+  color: var(--color-text-error);
+}
+
+.input__helper-icon {
+  display: inline-flex;
+  width: var(--input-icon-size);
+  height: var(--input-icon-size);
+  flex-shrink: 0;
+}
